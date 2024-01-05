@@ -206,7 +206,7 @@ body {
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.25);
-  padding: 26px 26px;
+  padding: 26px;
   box-sizing: border-box;
   flex-basis: 32.5%;
   transition: 0.3s;
@@ -336,6 +336,10 @@ body {
   margin-right: 5px;
 }
 
+.collapsible:hover:after {
+  color: rgba(255, 255, 255, 1);
+}
+
 .active:after {
   color: rgba(255, 255, 255, 1);
   content: "\2212";
@@ -343,11 +347,11 @@ body {
 }
 
 .content {
-  padding: 0 18px;
+  padding: 0;
   max-height: 0;
   line-height: 1.5;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  transition: max-height 0.15s ease-out;
 }
 
 .faq {
@@ -396,5 +400,165 @@ body {
 }
 
 @media(max-width: 1130px){
-  
+  .header, .container {
+    max-width: 900px;
+  }
+
+  .form__input {
+    width: 290px;
+    font-size: 16px;
+    padding: 10px 0 10px 35px;
+  }
+
+  .header {
+    padding: 14px 15px 80px 16px;
+  }
+
+  .header__list {
+    gap: 20px;
+    font-size: 16px;
+  }
+
+  .main__text {
+    flex-basis: 450px;
+  }
+
+  .main__title {
+    font-size: 46px;
+  }
+
+  .main__list {
+    gap: 40px;
+  }
+
+  .main__description, .main__item, .description, .card__nick, .card__author, .card__price, .card__link, .collapsible{
+    font-size: 18px;
+  }
+
+  .main__span {
+    font-size: 25px;
+  }
+
+  .main__image {
+    flex-basis: calc(100% - 450px - 40px);
+  }
+
+  .company {
+    margin-top: 90px;
+  }
+
+  .company__img {
+    height: 52px;
+  }
+
+  .title {
+    font-size: 35px;
+  }
+
+  .card {
+    margin-top: 25px;
+    margin-bottom: 200px;
+  }
+
+  .card__item {
+    padding: 20px;
+  }
+
+  .card__cover, .card__img {
+    height: 300px;
+  }
+
+  .card__info {
+    gap: 10px;
+  }
+
+  .card__bid {
+    font-size: 13px;
+  }
+
+  .card__link {
+    padding: 9px;
+  }
+}
+
+@media (max-width: 880px) {
+  .header, .container {
+    max-width: 900px;
+  }
+
+  .form__input {
+    width: 290px;
+    font-size: 16px;
+    padding: 10px 0 10px 35px;
+  }
+
+  .header {
+    padding: 14px 15px 80px 16px;
+  }
+
+  .header__list {
+    gap: 20px;
+    font-size: 16px;
+  }
+
+  .main__text {
+    flex-basis: 450px;
+  }
+
+  .main__title {
+    font-size: 46px;
+  }
+
+  .main__list {
+    gap: 40px;
+  }
+
+  .main__description, .main__item, .description, .card__nick, .card__author, .card__price, .card__link, .collapsible{
+    font-size: 18px;
+  }
+
+  .main__span {
+    font-size: 25px;
+  }
+
+  .main__image {
+    flex-basis: calc(100% - 450px - 40px);
+  }
+
+  .company {
+    margin-top: 90px;
+  }
+
+  .company__img {
+    height: 52px;
+  }
+
+  .title {
+    font-size: 35px;
+  }
+
+  .card {
+    margin-top: 25px;
+    margin-bottom: 200px;
+  }
+
+  .card__item {
+    padding: 20px;
+  }
+
+  .card__cover, .card__img {
+    height: 300px;
+  }
+
+  .card__info {
+    gap: 10px;
+  }
+
+  .card__bid {
+    font-size: 13px;
+  }
+
+  .card__link {
+    padding: 9px;
+  }
 }

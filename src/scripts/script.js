@@ -10,5 +10,10 @@ for (i = 0; i < coll.length; i++) {
     } else {
       content.style.maxHeight = content.scrollHeight + "px";
     } 
+    if (this.className.includes('active')) {
+      this.style.marginBottom = '0'
+    } else {
+      this.style.marginBottom = '39px'
+    }
   });
 }
