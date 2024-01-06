@@ -562,3 +562,132 @@ body {
     font-size: 35px;
   }
 }
+
+@media(max-width: 600px) {
+  .card {
+    flex-direction: column;
+    max-width: 350px;
+    margin: 30px auto;
+    gap: 20px;
+  }
+
+  .faq {
+    flex-direction: column;
+  }
+
+  .card__cover, .card__img {
+    height: 70vw;
+  }
+
+  .card__link {
+    border-radius: 9px;
+    padding: 13px  
+  }
+
+  .banner {
+    padding: 40px 10px 45px;
+  }
+}
+
+@media(max-width: 550px) {
+  .header {
+    padding-bottom: 60px;
+  }
+
+  .main__image {
+    display: none;
+  }
+
+  .main__title {
+    font-size: 40px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .main__description, .main__item, .description, .card__nick, .card__author, .card__price, .card__link, .collapsible{
+    font-size: 16px;
+  }
+
+  .main__btn {
+    font-size: 18px;
+  }
+
+  .main__item {
+    font-size: 14px;
+  }
+
+  .company {
+    margin-top: 50px;
+  }
+
+  .banner__title {
+    font-size: 30px;
+  }
+
+  .banner {
+    margin-bottom: 70px;
+  }
+}
+
+@media(max-width: 400px) {
+  .header {
+    padding-bottom: 45px;
+  }
+
+  .card__cover, .card__img {
+    height: 90vw;
+  }
+
+  .main__title {
+    font-size: 35px;
+  }
+  
+  .title {
+    font-size: 25px;
+  }
+
+  .main__list {
+    justify-content: space-around;
+  }
+
+  .main__btn {
+    font-size: 16px;
+  }
+
+  .main__span {
+    font-size: 22px;
+  }
+
+  .company {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 40px;
+  }
+
+  .company__img {
+    height: 10vw;
+  }
+
+  .questions {
+    margin-bottom: 100px;
+  }
+
+  .collapsible {
+    margin-top: 20px;
+  }
+
+  .banner {
+    padding: 15px 5px 25px;
+  }
+
+  .banner__title {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .banner__link {
+    font-size: 16px;
+  }
+}
