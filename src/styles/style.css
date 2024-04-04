@@ -24,8 +24,12 @@ body {
   font-size: 20px;
 }
 
+.header__section {
+  flex: 1;
+}
+
 .header__nav {
-  margin-right: 11px;
+  /* margin-right: 11px; */
 }
 
 .header__logo {
